@@ -1,0 +1,5 @@
+scikit-image
+torchsummary
+timm
+omegaconf
+hydra-core

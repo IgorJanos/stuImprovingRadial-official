@@ -1,0 +1,25 @@
+# @package _global_
+defaults:
+  - override /model: lite0
+  - override /training: long
+
+model:
+  backbone: tf_efficientnet_lite0
+  num_outputs: 2
+  num_compare: 16
+  num_hidden: 24
+
+training:
+  batch_size: 128
+  lr: 0.001
+  lr_decay: 0.9875
+
+  # Custom loss weights
+  lambda_comp: 0.2
+  lambda_dlp: 30.0
+  lambda_exreg: 0.0
+
+exp:
+  name: sreg-2p-lite0-long
+  wandb: False
+  psnr_ssim: False

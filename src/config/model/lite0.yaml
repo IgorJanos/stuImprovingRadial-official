@@ -1,0 +1,8 @@
+_target_: backstage.models.timm_models.TimmDistortionModel
+backbone: tf_efficientnet_lite0
+num_outputs: 2
+num_hidden: 16
+num_compare: 6
+num_compare_outputs: 1
+drop_rate: 0.0
+input_shape: [224, 224]

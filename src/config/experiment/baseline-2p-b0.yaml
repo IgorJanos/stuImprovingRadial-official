@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - override /model: baseline
+  - override /training: baseline
+
+model:
+  backbone: efficientnet_b0
+  num_outputs: 2
+  num_hidden: 256
+
+training:
+  lambda_comp: 0.0
+  lambda_dlp: 0.0
+  lambda_exreg: 0.0
+
+exp:
+  name: baseline-2p-b0
+  wandb: False
+  psnr_ssim: False

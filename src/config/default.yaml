@@ -1,0 +1,22 @@
+hydra:
+  run:
+    dir: .mnt/persist/logs/${exp.name}/${exp.ver}
+
+
+# Default groups
+defaults:
+  - _self_
+  - dataset: football360
+  - eval: default
+  - training: baseline
+  - model: lite0
+
+# Experiment stuff
+exp:
+  name: default
+  ver: 0
+  id: ${.name}.${.ver}
+  wandb: True
+  psnr_ssim: True
+
+

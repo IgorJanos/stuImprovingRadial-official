@@ -1,0 +1,15 @@
+# Training parameters
+it_per_epoch: 1000
+epochs: 150
+batches_per_it: 1
+batch_size: 64
+
+# Adam stuff
+lr: 0.0005
+lr_decay: 0.97
+betas: [0.9, 0.999]
+
+# Custom loss weights
+lambda_comp: 0.2
+lambda_dlp: 50.0
+lambda_exreg: 0.0005

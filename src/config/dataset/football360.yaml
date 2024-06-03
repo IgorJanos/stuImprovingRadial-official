@@ -1,0 +1,4 @@
+folder: /mnt/datasets/football360
+train_set: C
+val_set: V
+num_workers: 12

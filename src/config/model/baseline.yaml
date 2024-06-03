@@ -1,0 +1,7 @@
+_target_: backstage.models.baseline.BaselineDistortionModel
+backbone: efficientnet_b5
+num_outputs: 1
+num_hidden: 256
+drop_rate: 0.0
+input_shape: [224, 224]
+hidden_act: relu
